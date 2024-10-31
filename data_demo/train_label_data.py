@@ -3,7 +3,7 @@ import shutil
 
 # Source and destination directories
 source_dir = r'..\..\Public_leaderboard_data\train_labels'
-dest_dir = r'\masks'
+dest_dir = r'images'
 
 # Create the destination directory if it does not exist
 os.makedirs(dest_dir, exist_ok=True)
@@ -12,11 +12,13 @@ os.makedirs(dest_dir, exist_ok=True)
 for subdir, _, files in os.walk(source_dir):
     # Get the subfolder name (e.g., '01', '02', etc.)
     subfolder_name = os.path.basename(subdir)
-    
+    print(subfolder_name)
+
     for file in files:
         if file.endswith('.png'):  # Adjust the file extension as needed
             # Construct full file paths
             source_image_path = os.path.join(subdir, file)
+            print(source_image_path)
             
             # Remove the file extension from the original file name
             file_name_without_extension = os.path.splitext(file)[0]
