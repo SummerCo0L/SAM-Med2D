@@ -3,7 +3,7 @@ import shutil
 
 # Source and destination directories
 source_dir = r'..\..\Public_leaderboard_data\val_labels'
-dest_dir = r'\masks'
+dest_dir = r'masks'
 
 # Create the destination directory if it does not exist
 os.makedirs(dest_dir, exist_ok=True)

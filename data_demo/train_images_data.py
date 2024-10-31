@@ -3,7 +3,7 @@ import shutil
 
 # Source and destination directories
 source_dir = r'..\..\Public_leaderboard_data\train_images'
-dest_dir = r'\images'
+dest_dir = r'images'
 
 # Create the destination directory if it does not exist
 os.makedirs(dest_dir, exist_ok=True)
