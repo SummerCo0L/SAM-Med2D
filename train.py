@@ -37,7 +37,7 @@ def parse_args():
     parser.add_argument("--point_list", type=list, default=[1, 3, 5, 9], help="point_list")
     parser.add_argument("--multimask", type=bool, default=True, help="ouput multimask")
     parser.add_argument("--encoder_adapter", type=bool, default=True, help="use adapter")
-    # parser.add_argument("--use_amp", type=bool, default=False, help="use amp")
+    parser.add_argument("--use_amp", type=bool, default=False, help="use amp")
     args = parser.parse_args()
     if args.resume is not None:
         args.sam_checkpoint = None
