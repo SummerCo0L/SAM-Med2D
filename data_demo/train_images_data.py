@@ -2,8 +2,8 @@ import os
 import shutil
 
 # Source and destination directories
-source_dir = r'C:\Users\mingy\Desktop\SMU\CS701\Project\Public_leaderboard_data\train_images'
-dest_dir = r'C:\Users\mingy\Desktop\SMU\CS701\PROJECT\PUBLIC_LEADERBOARD_DATA\data_demo\images'
+source_dir = r'..\..\Public_leaderboard_data\train_images'
+dest_dir = r'\images'
 
 # Create the destination directory if it does not exist
 os.makedirs(dest_dir, exist_ok=True)

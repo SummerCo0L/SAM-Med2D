@@ -2,8 +2,8 @@ import os
 import json
 
 # Define source directories
-images_dir = r'C:\Users\mingy\Desktop\SMU\CS701\PROJECT\PUBLIC_LEADERBOARD_DATA\DATA_DEMO\images'
-masks_dir = r'C:\Users\mingy\Desktop\SMU\CS701\PROJECT\PUBLIC_LEADERBOARD_DATA\DATA_DEMO\masks'
+images_dir = r'\images'
+masks_dir = r'\masks'
 
 # Create a dictionary to hold mask-to-image mappings
 label_to_images = {}
@@ -32,7 +32,7 @@ for mask_file in os.listdir(masks_dir):
             continue
 
 # Write the dictionary to a JSON file
-json_file_path = r'C:\Users\mingy\Desktop\SMU\CS701\PROJECT\PUBLIC_LEADERBOARD_DATA\DATA_DEMO\label2image_train.json'
+json_file_path = r'\label2image_train.json'
 with open(json_file_path, 'w') as json_file:
     json.dump(label_to_images, json_file, indent=4)
 
